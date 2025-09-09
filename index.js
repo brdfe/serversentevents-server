@@ -29,6 +29,6 @@ const server = http.createServer((req, res) => {
   })
 });
 
-server.listen(80, 'localhost', () => {
-  console.log('Server started on port 80');
+server.listen(443, 'localhost', () => {
+  console.log('Server started on port 443');
 })
