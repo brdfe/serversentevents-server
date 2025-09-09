@@ -1,6 +1,11 @@
 const http = require('node:http');
 
 const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    res.end('Helloo World!')
+    return;
+  }
+
   res.setHeader("Content-Type", "text/event-stream");
   res.setHeader("Cache-Control", "no-cache");
   res.setHeader("Connection", "keep-alive");
